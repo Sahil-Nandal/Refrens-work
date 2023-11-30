@@ -1,0 +1,33 @@
+.profileDetails{
+    margin: 50px;
+}
+
+.profileHead{
+    display: flex;
+    margin: 20px;
+}
+
+.profileheading{
+    margin: 10px;
+}
+
+.content{
+    display: flex;
+}
+
+.profileimg{
+    height: 100%;
+    margin: 20px;
+}
+
+.details{
+    margin-left: 90px;
+}
+
+.episodeSec{
+    margin-left: 50px;
+}
+
+.goBack{
+    margin-left: 50px;
+}

@@ -1,0 +1,62 @@
+.card {
+    
+    /* height: 254px; */
+    background: white;
+    border-radius: 10px;
+    transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin: 20px;
+    border: 1px solid #ccc;
+        transition: all 0.5s;
+    padding: 15px;
+    width: 200px;
+   }
+   
+   .shadow {
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+                0 0  0 2px rgb(190, 190, 190),
+                0.3em 0.3em 1em rgba(0,0,0,0.3);
+   }
+   
+   .card:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+  }
+  
+  .viewprofile {
+    padding: 10px 20px;
+    border: unset;
+    border-radius: 5px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 12px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+   
+   .viewprofile::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   .viewprofile:hover {
+    color: #e8e8e8;
+   }
+   
+   .viewprofile:hover::before {
+    width: 100%;
+   }
